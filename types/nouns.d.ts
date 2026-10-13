@@ -14,5 +14,6 @@ declare module 'claude-code' {
     filetree: ModApi
     savvy: ModApi
     replay: ModApi
+    workers: ModApi
   }
 }

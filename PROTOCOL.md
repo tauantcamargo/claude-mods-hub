@@ -15,6 +15,7 @@ tab is not drawn.
 | filetree | `$.filetree` |
 | savvy-progress | `$.savvy` |
 | replay-theater | `$.replay` |
+| workers | `$.workers` |
 
 ## Adding the noun
 

@@ -14,6 +14,7 @@ export const MODS: readonly { noun: string; name: string }[] = [
   { noun: 'filetree', name: 'filetree' },
   { noun: 'savvy', name: 'savvy-progress' },
   { noun: 'replay', name: 'replay-theater' },
+  { noun: 'workers', name: 'workers' },
 ]
 
 type Loaded = { noun: string; panel: ModsPanel; failed?: string }
@@ -37,6 +38,8 @@ async function panelOf($: EngineInterface, noun: string, args: ModsPanelArgs): P
       return $.savvy.panel(args)
     case 'replay':
       return $.replay.panel(args)
+    case 'workers':
+      return $.workers.panel(args)
     default:
       throw new Error(`no mod named ${noun}`)
   }
@@ -54,6 +57,8 @@ async function actOn($: EngineInterface, noun: string, args: ModsActArgs): Promi
       return $.savvy.act(args)
     case 'replay':
       return $.replay.act(args)
+    case 'workers':
+      return $.workers.act(args)
     default:
       throw new Error(`no mod named ${noun}`)
   }
