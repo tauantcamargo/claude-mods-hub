@@ -18,6 +18,7 @@ tab is not drawn.
 | replay-theater | `$.replay` |
 | reflect-mod | `$.reflect` |
 | workers | `$.workers` |
+| muninn | `$.muninn` |
 
 ## Adding the noun
 

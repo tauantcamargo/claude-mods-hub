@@ -15,6 +15,7 @@ commands, and every setting is the user's: the same in every session and project
 | Replay | [replay-theater](https://github.com/mvacoimbra/claude-code-playground) | Step through the last turn's edits |
 | Reflect | [reflect-mod](https://github.com/mvacoimbra/claude-reflect) | Rules found in your corrections, to save to CLAUDE.md or skip, and the pause switch |
 | Workers | [workers](https://github.com/tauantcamargo/claude-mods) | Subagents as Norse and Roman gods: who is in battle, triumphs, the oracle check, and which pantheon names the next ones |
+| Muninn | [muninn](https://github.com/tauantcamargo/claude-mods) | Your [ai-memory](https://github.com/akitaonrails/ai-memory): the project's memory, the last handoff, a search, recent pages and the status-line count |
 | Components | | Everything a mod can draw or do, named and live: every element with every prop and value (Box, Text, Button, Input, Select, Link, Code, Markdown, Svg, Raster, Image, Client), the theme colours, the sites a mod draws in, the calls outside a drawing (toast, notify, ask, status, copy, panes), and every named component of each installed mod, from its catalog |
 | Settings | | The language of the pane and of every view (English or Português), and where settings live |
 

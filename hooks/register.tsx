@@ -26,6 +26,7 @@ export const MODS: readonly ModInfo[] = [
   { noun: 'replay', name: 'replay-theater', title: { en: 'Replay', pt: 'Replay' }, icon: 'replay' },
   { noun: 'reflect', name: 'reflect-mod', title: { en: 'Reflect', pt: 'Reflect' }, icon: 'reflect' },
   { noun: 'workers', name: 'workers', title: { en: 'Workers', pt: 'Workers' }, icon: 'agents' },
+  { noun: 'muninn', name: 'muninn', title: { en: 'Muninn', pt: 'Muninn' }, icon: 'raven' },
 ]
 
 // The mods whose components the Components tab names; blast-radius has a catalog and no view.
@@ -56,6 +57,8 @@ async function panelOf($: EngineInterface, noun: string, args: ModsPanelArgs): P
       return $.reflect.panel(args)
     case 'workers':
       return $.workers.panel(args)
+    case 'muninn':
+      return $.muninn.panel(args)
     default:
       throw new Error(`no mod named ${noun}`)
   }
@@ -77,6 +80,8 @@ async function actOn($: EngineInterface, noun: string, args: ModsActArgs): Promi
       return $.reflect.act(args)
     case 'workers':
       return $.workers.act(args)
+    case 'muninn':
+      return $.muninn.act(args)
     default:
       throw new Error(`no mod named ${noun}`)
   }

@@ -20,6 +20,8 @@ declare module 'claude-code' {
     reflect: ModApi
     // workers has a tab and no catalog.
     workers: Omit<ModApi, 'catalog'>
+    // muninn (ai-memory) has a tab and no catalog.
+    muninn: Omit<ModApi, 'catalog'>
     // blast-radius has no tab, only a catalog.
     blast: { catalog: (args: ModsPanelArgs) => Promise<ModsCatalogEntry[]> }
   }

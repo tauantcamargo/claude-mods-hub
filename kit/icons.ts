@@ -46,6 +46,8 @@ export const ICON_PATHS = {
   settings: '<circle cx="12" cy="12" r="2.8"/><path d="M12 3.5v2.2M12 18.3v2.2M3.5 12h2.2M18.3 12h2.2M6 6l1.6 1.6M16.4 16.4L18 18M6 18l1.6-1.6M16.4 7.6L18 6"/>',
   mods: '<path d="M4 7h16M4 12h16M4 17h10"/>',
   reflect: '<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/>',
+  // Muninn, Odin's raven of memory: ai-memory.
+  raven: '<path d="M21.5 8.2l-3.2-.9a4.3 4.3 0 0 0-8.1 1.6c-.3 2.4-1.8 4.3-4.2 5.4L3 15.5c2.6 1.6 6 2.1 9 1.3 4-1.1 6.3-4.4 6.5-8z"/><path d="M15.2 7.8v.01"/><path d="M10.5 17l-1 3.5M13.5 16.4l.5 3.6"/>',
 } as const
 
 export type IconName = keyof typeof ICON_PATHS

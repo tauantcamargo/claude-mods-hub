@@ -11,7 +11,8 @@ for dir in \
   "$root/claude-kit/plugins/savvy-progress" \
   "$root/claude-code-playground/claude-code/mods/replay-theater" \
   "$root/claude-code-playground/claude-code/mods/blast-radius" \
-  "$root/claude-reflect/mod"
+  "$root/claude-reflect/mod" \
+  "$root/claude-mods/plugins/muninn"
 do
   if [ -d "$dir/hooks" ]; then
     mkdir -p "$dir/hooks/kit"
