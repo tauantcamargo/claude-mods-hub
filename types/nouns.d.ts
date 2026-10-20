@@ -18,8 +18,6 @@ declare module 'claude-code' {
     savvy: ModApi
     replay: ModApi
     reflect: ModApi
-    // workers has a tab and no catalog.
-    workers: Omit<ModApi, 'catalog'>
     // muninn (ai-memory) has a tab and no catalog.
     muninn: Omit<ModApi, 'catalog'>
     // blast-radius has no tab, only a catalog.

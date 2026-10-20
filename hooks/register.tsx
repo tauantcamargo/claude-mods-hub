@@ -25,7 +25,6 @@ export const MODS: readonly ModInfo[] = [
   { noun: 'savvy', name: 'savvy-progress', title: { en: 'Agents', pt: 'Agentes' }, icon: 'agents' },
   { noun: 'replay', name: 'replay-theater', title: { en: 'Replay', pt: 'Replay' }, icon: 'replay' },
   { noun: 'reflect', name: 'reflect-mod', title: { en: 'Reflect', pt: 'Reflect' }, icon: 'reflect' },
-  { noun: 'workers', name: 'workers', title: { en: 'Workers', pt: 'Workers' }, icon: 'agents' },
   { noun: 'muninn', name: 'muninn', title: { en: 'Muninn', pt: 'Muninn' }, icon: 'raven' },
 ]
 
@@ -55,8 +54,6 @@ async function panelOf($: EngineInterface, noun: string, args: ModsPanelArgs): P
       return $.replay.panel(args)
     case 'reflect':
       return $.reflect.panel(args)
-    case 'workers':
-      return $.workers.panel(args)
     case 'muninn':
       return $.muninn.panel(args)
     default:
@@ -78,8 +75,6 @@ async function actOn($: EngineInterface, noun: string, args: ModsActArgs): Promi
       return $.replay.act(args)
     case 'reflect':
       return $.reflect.act(args)
-    case 'workers':
-      return $.workers.act(args)
     case 'muninn':
       return $.muninn.act(args)
     default:

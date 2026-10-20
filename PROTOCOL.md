@@ -17,7 +17,6 @@ tab is not drawn.
 | savvy-progress | `$.savvy` |
 | replay-theater | `$.replay` |
 | reflect-mod | `$.reflect` |
-| workers | `$.workers` |
 | muninn | `$.muninn` |
 
 ## Adding the noun
